@@ -1,0 +1,22 @@
+{
+    "name": "do-you-know-me-cli-quiz",
+    "version": "1.0.0",
+    "description": "How well do you know me? Well, answer these 5 questions to find out!",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tonymike99/do-you-know-me-CLI-quiz.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/tonymike99/do-you-know-me-CLI-quiz/issues"
+    },
+    "homepage": "https://github.com/tonymike99/do-you-know-me-CLI-quiz#readme",
+    "dependencies": {
+        "readline-sync": "^1.4.10"
+    }
+}
