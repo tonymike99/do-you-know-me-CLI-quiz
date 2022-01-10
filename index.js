@@ -1,13 +1,13 @@
-var readLineSync = require('readline-sync');
+const readLineSync = require('readline-sync');
 
 console.log(`Welcome to the "Do you know me?" CLI quiz`);
 
-var username = readLineSync.question('Please enter your name: ');
+const username = readLineSync.question('Please enter your name: ');
 console.log('Hello ' + username + '! Nice to meet you!\n');
 
 console.log("Let's begin the quiz!\n");
 
-let game = [
+const game = [
     {
         question: 'What is my name? ',
         answer: 'Tony',
@@ -30,11 +30,11 @@ let game = [
     },
 ];
 
-function play(game) {
+const play = (game) => {
     let score = 0;
 
     for (let round of game) {
-        var userAnswer = readLineSync.question(round['question']);
+        const userAnswer = readLineSync.question(round['question']);
         if (userAnswer.toUpperCase() === round['answer'].toUpperCase()) {
             console.log('Correct!');
             score++;
@@ -44,7 +44,7 @@ function play(game) {
     }
 
     return score;
-}
+};
 
 console.log(
     'You have answered ' +
@@ -55,11 +55,12 @@ console.log(
         username
 );
 
-let highScore = [{name: 'James', score: 5}];
+const highScore = [{name: 'James', score: 5}];
 
 console.log(
     "\nCheck out the high scores. If you should be there, ping me and I'll update it"
 );
+
 for (let item of highScore) {
     console.log(item.name + ' : ' + item.score);
 }
